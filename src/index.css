@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit Variable", "Segoe UI", sans-serif;
+  --font-serif: "Newsreader Variable", Georgia, serif;
+  --color-background: #f3f6f5;
+  --color-foreground: #1b2631;
+  --color-card: #ffffff;
+  --color-card-foreground: #1b2631;
+  --color-primary: #1b8a72;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #ffffff;
+  --color-secondary-foreground: #1b2631;
+  --color-muted: #eef3f1;
+  --color-muted-foreground: #6d7b84;
+  --color-accent: #e7f6f1;
+  --color-accent-foreground: #146e5b;
+  --color-destructive: #d4544c;
+  --color-border: #e4ece8;
+  --color-input: #e4ece8;
+  --color-ring: #8dcec0;
+  --color-sidebar: #102838;
+  --color-sidebar-foreground: #d7e1e6;
+  --color-routine: #6dcebf;
+  --color-suspected: #e2b15c;
+  --color-confirmed: #e48b84;
+  --color-signal: #3cbfa6;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
